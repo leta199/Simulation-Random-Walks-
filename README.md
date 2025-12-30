@@ -20,17 +20,23 @@ Packages:
 ![Status](https://img.shields.io/badge/Status-Completed-lightgrey)
 
 ## METHODS AND TECHNIQUES  
-**Setup of simulation**   
+**Practice simulation**   
 
 Setting up the number of bets per month (100,000) as n
 Setting up the probability of success and failure for each bet at 20/38 and 18/38
 Defined `totalgain` as a test run of the  amount for 1 simulation run 
 
 **Simulation loop**  
+Set seed for reproducibility   
+Defining the total number of bets made per month (100,000)  
+Creating a random walk by sampling between gains of $-1 and $1 with the given probabilities and number of bets per month  
+Plotting the randomwalk via "distance" from our start point of $0  
 
 
 ## FUNCTION EXPLANATION
+Creation of funtion named `sim4ot6`  
 
+This 
 
 
 
