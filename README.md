@@ -48,11 +48,7 @@ We then replicate this simulation 5000 times and get the mean of the outcome sto
  ## PROJECT STRUCTURE      
 |[Simulation- Random Walks](https://github.com/leta199/Simulation-Random-Walks)  
 |├── [Randomwalk R script](https://github.com/leta199/Simulation-Random-Walks/blob/main/Randomwalk.r)   
-|├── [Beforetest_conditional_function](https://github.com/leta199/Simulation-Conditional-Probability/blob/main/Beforetests_conditional_function.r)  
-|├── [README.md](https://github.com/leta199/Simulation-Conditional-Probability/blob/main/README.md)    
-|├── [Tests_conditional_prob](https://github.com/leta199/Simulation-Conditional-Probability/blob/main/Tests_conditional_prob.r)  
-|├── [conditional_sum_analytical_tex](https://github.com/leta199/Simulation-Conditional-Probability/blob/main/conditional_sum.tex)  
-|└──[conditonal_sum_pdf_analytical](https://github.com/leta199/Simulation-Conditional-Probability/blob/main/conditional_sum_analytical_pdf.pdf)
+|└──[Random latex](https://github.com/leta199/Simulation-Random-Walks/blob/main/Random_Walk_Gamblers_Ruin.pdf)
   
 
 ## AUTHORS   
