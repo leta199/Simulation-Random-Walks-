@@ -1,11 +1,13 @@
 # Simulation - Random Walks
 A simulation of "Gamblers Ruin"- this is a classic statistics and modelling problem to peer into the expected amount of money won or lost based on probabilities of winning or losing a sepcfici amount of moeny through betting. This simulation utilises a constant probablity of success to simulate the our random walk with a lose or gain of $1/ bet. 
 
+We will look into a casino that has 100,000 bets a month and identify the amounts of money we expect from these bets in a month. Each bet represents a loss or gain of $1, therefore we will investigate aspects of this month for the casino such as probabilites of outcomes and amount the casino makes. 
+
 This project will cover:
 
-- Setting up simulation parameters 
-- Simulating an amount won after n many bets 
-- Simualting "Gamblers Ruin" using random walks
+- Setting up simulation parameters (number of bets, number of repetitions)
+- Simulating an amount won after 100,000  bets 
+- Simulating "Gamblers Ruin" using random walks
 - Graphing the random walk and finding the probability of making between $4600 and $6000 from 100,000 bets in a casino
  
 ## HOW IT'S MADE 
@@ -20,17 +22,12 @@ Packages:
 ## METHODS AND TECHNIQUES  
 **Setup of simulation**   
 
-Setting up the number of successful trials (n) our loop stops at.  
-Created `counter` to store successful trials.   
-Utilised `simlist` to count the number of successes of the probabilty of interest. 
+Setting up the number of bets per month (100,000) as n
+Setting up the probability of success and failure for each bet at 20/38 and 18/38
+Defined `totalgain` as a test run of the  amount for 1 simulation run 
 
 **Simulation loop**  
 
-**While loop** that runs  as long as our counter is < 10,000  
-**If statement**- if sum is 7 store  the success ( 2 given sum is 7 in "success" as 1 and 0 otherwise.   
-iterate up our counter.     
-Then assign successes to `simlist` based on the index of `counter`.   
-Simulate probability with `mean()` of simlist. 
 
 ## FUNCTION EXPLANATION
 
@@ -43,41 +40,6 @@ In order to create the function `conditional_sum_prob`, I carried out the follow
 - Visualised each of the three trail functions to pick best simulated proababilty comapred to known analytical solution.
 - Final beta function defined.
 
-## FUNCTION TESTS 
-For the final tests of the functions I carried out the following tests:   
-1) **Edge cases**- using the `testthat` package I made sure the known porobabilities such as 2 given a sum of 7 are within a tolernace of 0.01. 
-
-2) **Extreme values**- function would continue to run when values where outside of reasonable bounds.   
-
-3) **If statement revision**- limited values that could be entered ustilisng if statements.   
-
-4) **Error messages with if statements**- changed the output of format messages utilising `$` to call only specific error messages.
-
-## FUNCTION EXAMPLES  
-The function I created `conditional_sum_prob()` calculates the probablity of your first toss being a specific value given the sum of two dice rolls is a specific value.  
-
-It has two main arguments:  
-`first_toss`- what is the value of the first toss.   
-`sum_of_tosses`- what is the sum of two dices tossed.   
-
-1) Probability of the first toss being 2 given the sum of the two is 7 would be:  
-`conditional_sum_prob(2,7`)   
-returns [0.167] ≈ 1/6 
-
-2) Probability of first toss being 7 given sum is 12 would be:  
-`conditional_sum_prob(7,12)`  
-returns  ["Please enter a value from 1-6 for the first toss"]
-
-3) Probability of first toss being 3 given sum is 14 would be:  
-`conditional_sum_prob(3,14)`  
-returns ["Please enter a value from 2-12 for the sum of tosses"]
-
-4) Probability of first toss being 7 given sum is 14 would be:  
-`conditonal_prob_Sum(7,14)`  
-returns  ["Please enter a value from 1-6 for the first toss"]  ["Please enter a value from 2-12 for the sum of tosses"]                    
-6) Probability of first toss being 1 given sum is 8 would be:  
-`conditonal_sum_prob(1,8)`  
-returns [0]
 
  ## PROJECT STRUCTURE      
 |[Simulation- Conditional Probability](https://github.com/leta199/Simulation-Conditional-Probability)  
