@@ -27,10 +27,10 @@ Setting up the probability of success and failure for each bet at 20/38 and 18/3
 Defined `totalgain` as a test run of the  amount for 1 simulation run 
 
 **Simulation loop**  
-Set seed for reproducibility   
-Defining the total number of bets made per month (100,000)  
-Creating a random walk by sampling between gains of $-1 and $1 with the given probabilities and number of bets per month  
-Plotting the randomwalk via "distance" from our start point of $0  
+- Set seed for reproducibility   
+- Defining the total number of bets made per month (100,000)  
+- Creating a random walk by sampling between gains of $-1 and $1 with the given probabilities and number of bets per month  
+- Plotting the randomwalk via "distance" from our start point of $0  
 
 <img width="1183" height="825" alt="Image" src="https://github.com/user-attachments/assets/56b7f5bc-90ec-4551-be9e-b8ba0fb1031c" />
 
